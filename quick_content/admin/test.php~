@@ -1,0 +1,41 @@
+<?php
+// заполняем массив всеми элементами из директории
+$handle = opendir('../csv');
+
+while (false !== ($file = readdir($handle))) {
+    $files[] =  $file;
+}
+closedir($handle); 
+sort($files);
+print_r($files);
+?>
+
+<ul class="tabs"><li class="current">
+
+<?php
+$row = 1;
+$handle = fopen("../csv/index.csv", "r");
+while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+    $num = count($data);
+    $row++;
+    for ($c=0; $c < $num; $c=$c+2) {
+		$arr[] = "../csv/".$data[$c] . ".csv";
+        echo $data[$c+1] . "</li><li>";
+    }
+}
+fclose($handle);
+?>Ваше слово</li>
+	</ul><div class="box visible">
+<?php 
+foreach ($arr as $v) {
+	$row = 1;
+	$handle = fopen($v, "r");
+	while (($data = fgetcsv($handle, 1000, "&")) !== FALSE) {
+		$num = count($data);
+		$row++;
+		for ($c=0; $c < $num; $c++) {echo $data[$c] . "<br />\n";}
+		}
+	fclose($handle);
+}
+
+ ?>
