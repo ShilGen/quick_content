@@ -26,7 +26,7 @@ No content</li>
 echo "Search: <input id='searchBox' type='text'></input><span id='time'></span><br>";
  while (($data = fgetcsv($handle, 1000, "&")) !== FALSE)
   {$num = count($data); $row++; 
-  for ($c=0; $c < $num; $c++) {echo "<div>".$data[$c] . "</div><br />\n";}} fclose($handle); 
+  for ($c=0; $c < $num; $c++) {echo "<div class='lined'>".$data[$c] . "</div><br />\n";}} fclose($handle); 
   echo "</div><div class='box'>";} ?></div>
 </div><!-- .section off-->
 </body>
