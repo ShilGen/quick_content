@@ -9,83 +9,83 @@ h1 {font-size: 21px; font-weight: normal; margin: 0 0 30px;}
 		display:inline-block;
 		}
 .section {
-	width: 800px;
-	background: #EFEFEF;
-	margin: 30px;
+		width: 800px;
+		background: #EFEFEF;
+		margin: 30px;
 }
 ul.tabs {
-	height: 28px;
-	line-height: 25px;
-	list-style: none;
-	border-bottom: 1px solid #DDD;
-	background: #FFF;
+		height: 28px;
+		line-height: 25px;
+		list-style: none;
+		border-bottom: 1px solid #DDD;
+		background: #FFF;
 }
 .tabs li {
-	float: left;
-	display: inline;
-	margin: 0 1px -1px 0;
-	padding: 0 13px 1px;
-	color: #F9F9F9;
-	cursor: pointer;
-	background: #777;
-	border: 1px solid #E4E4E4;
-	border-bottom: 1px solid #F9F9F9;
-	position: relative;
+		float: left;
+		display: inline;
+		margin: 0 1px -1px 0;
+		padding: 0 13px 1px;
+		color: #F9F9F9;
+		cursor: pointer;
+		background: #777;
+		border: 1px solid #E4E4E4;
+		border-bottom: 1px solid #F9F9F9;
+		position: relative;
 }
 .tabs li:hover,
 .vertical .tabs li:hover {
-	color: #F70;
-	padding: 0 13px;
-	background: #FFFFDF;
-	border: 1px solid #FFCA95;
+		color: #F70;
+		padding: 0 13px;
+		background: #FFFFDF;
+		border: 1px solid #FFCA95;
 }
 .tabs li.current {
-	color: #444;
-	background: #EFEFEF;
-	padding: 0 13px 2px;
-	border: 1px solid #D4D4D4;
-	border-bottom: 1px solid #EFEFEF;
+		color: #444;
+		background: #EFEFEF;
+		padding: 0 13px 2px;
+		border: 1px solid #D4D4D4;
+		border-bottom: 1px solid #EFEFEF;
 }
 .box {
-	display: none;
-	border: 1px solid #D4D4D4;
-  border-width: 0 1px 1px;
-	background: #EFEFEF;
-	padding: 0 12px;
-}
+		display: none;
+		border: 1px solid #D4D4D4;
+		border-width: 0 1px 1px;
+		background: #EFEFEF;
+		padding: 0 12px;
+	}
 .box.visible {
-	display: block;
+		display: block;
 }
 
 .section.vertical {
-	width: 440px;
-	border-left: 160px solid #FFF;
+		width: 440px;
+		border-left: 160px solid #FFF;
 }
 .vertical .tabs {
-	width: 160px;
-	float: left;
-	display: inline;
-	margin: 0 0 0 -160px;
+		width: 160px;
+		float: left;
+		display: inline;
+		margin: 0 0 0 -160px;
 }
 .vertical .tabs li {
-	padding: 0 13px;
-	margin: 0 0 1px;
-	border: 1px solid #E4E4E4;
-	border-right: 1px solid #F9F9F9;
-	width: 132px;
-	height: 25px;
+		padding: 0 13px;
+		margin: 0 0 1px;
+		border: 1px solid #E4E4E4;
+		border-right: 1px solid #F9F9F9;
+		width: 132px;
+		height: 25px;
 }
 .vertical .tabs li:hover {
-	width: 131px;
+		width: 131px;
 }
 .vertical .tabs li.current {
-	width: 133px;
-	color: #444;
-	background: #EFEFEF;
-	border: 1px solid #D4D4D4;
-  border-right: 1px solid #EFEFEF;
-  margin-right: -1px;
+		width: 133px;
+		color: #444;
+		background: #EFEFEF;
+		border: 1px solid #D4D4D4;
+		border-right: 1px solid #EFEFEF;
+		margin-right: -1px;
 }
 .vertical .box {
-  border-width: 1px;
+		border-width: 1px;
 }

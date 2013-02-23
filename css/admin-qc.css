@@ -1,43 +1,39 @@
  body {
-   	background: #879EA1;
-   	font-family: sans-serif;
-   	width: 1000px;
-   	margin: 20px auto;
-   }
-   
+		background: #879EA1;
+		font-family: sans-serif;
+		width: 1000px;
+		margin: 20px auto;}
+ div {
+		 background: #e3e3e3;
+		 clear: both;
+		 border: 1px solid #4c4c4c;	
+		 border-top: 3px solid #4c4c4c;	   	 
+		 padding: 20px;}  
  a.onetab {
-   	padding: 10px;
-   	text-decoration: none;
-   	color: white;
-   	font-weight: bold;
-   	text-shadow: 0 1px 0 black;
-   	line-height: 50px;
-   	
-   	border-right: 30px solid transparent;
-   	border-bottom: 30px solid #4c4c4c; 
-   	
-   	height: 0;
-   	display: block; 
-	float: left;	
-   }
+		padding: 10px;
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		text-shadow: 0 1px 0 black;
+		line-height: 50px;
+		border-right: 30px solid transparent;
+		border-bottom: 30px solid #4c4c4c; 
+		height: 0;
+		display: block; 
+		float: left;	
+		}
  a.dot {text-decoration: none; /* Убираем подчеркивание */
-	color: black; }
+		color: black; }
 	a.dot:hover { color: teal; /* Цвет ссылки при наведении на нее курсора */}  
 .metro {display: inline-block;
-	padding: 10px;
-	margin: 10px;
-	background: #4c4c4c;
-	color: white;
-	font-weight: bold;
-	text-decoration: none;}
+		padding: 10px;
+		margin: 10px;
+		background: #4c4c4c;
+		color: white;
+		font-weight: bold;
+		text-decoration: none;}
 	.metro:hover { background: #6D6A74; }
 
- div {
-     background: #e3e3e3;
-     clear: both;
-   	 border: 1px solid #4c4c4c;	
-   	 border-top: 3px solid #4c4c4c;	   	 
-   	 padding: 20px;
-   }
+
    
    

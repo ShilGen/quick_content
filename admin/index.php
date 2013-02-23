@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/admin-qc.css">
 	
 </head>
+
 <body><a class="onetab" href="#">Admin-QC</a><div>
 <?php $indexfile = "../csv/index.csv";
   $lines = count(file($indexfile));
