@@ -10,6 +10,7 @@
 
 <body><a class="onetab" href="#">Admin-QC</a><div>
 <?php $indexfile = "../csv/index.csv";
+	$indexpage = "../index.php";
   $lines = count(file($indexfile));
   echo "У нас уже есть $lines строк в";?><a class="dot" href='qc3.php'> <?php echo $indexfile ; ?></a>
  <h2>Форма добавления новой страницы</h2>
@@ -21,6 +22,7 @@
 <!--Кнопка -->               <p><input name="submit" type="submit" value="добавить в <?php echo $indexfile ; ?>">
 
 <input type="reset" value="Очистить"></p>
+<a class="dot" href='<?php echo $indexpage ; ?>'>Quick content main page </a>
  </form> 
 </div>
 </body>
