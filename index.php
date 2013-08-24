@@ -15,19 +15,22 @@
 </head>
 
 <body>
+	Search: <input id='searchBox' type='text'></input><span id='time'></span><br>
 	<div class="section vertical">
 		<ul class="tabs"><li class="current"><!--  part of titles-->
 		<?php $row = 1; $handle = fopen("csv/index.csv", "r");
 		while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
 			$num = count($data); $row++;
-			for ($c=0; $c < $num; $c=$c+2) {$arr[] = "csv/".$data[$c] . ".csv"; echo $data[$c+1] . "</li><li>";}
+			for ($c=0; $c < $num; $c=$c+2) {
+				$arr[] = "csv/".$data[$c] . ".csv"; 
+				echo $data[$c+1] . "</li><li>";}
 			}
 		fclose($handle);?>No content</li>
 		</ul>
 	
 	<div class="box visible"><!-- box visible - content part-->
 		<?php foreach ($arr as $v) {$row = 1; $handle = fopen($v, "r");
-		echo "Search: <input id='searchBox' type='text'></input><span id='time'></span><br>";
+		#echo "Search: <input id='searchBox' type='text'></input><span id='time'></span><br>";
 		 while (($data = fgetcsv($handle, 1000, "&")) !== FALSE)
 		  {$num = count($data); $row++; 
 		  for ($c=0; $c < $num; $c++) {echo "<div class='lined'>".$data[$c] . "</div><br />\n";}} fclose($handle); 

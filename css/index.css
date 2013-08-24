@@ -58,7 +58,11 @@ ul.tabs {
 }
 
 .section.vertical {
+<<<<<<< HEAD
 		width: 1000px;
+=======
+		width: 80%;
+>>>>>>> 6bb9cbcb714f8f3484e63acd86226bbd17bf7270
 		border-left: 160px solid #FFF;
 }
 .vertical .tabs {
